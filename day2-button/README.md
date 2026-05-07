@@ -1,16 +1,13 @@
 # Day 2: Button Controlled LED
 
 ## What I Learned
-- **digitalRead()** – Reading the state of an input pin (HIGH or LOW)
-- **INPUT_PULLUP** – Enabling internal pull-up resistor (no external resistor needed)
-- **Serial Monitor** – Debugging and seeing output from ESP32
-- **if/else logic** – Making decisions based on input
-
-## Key Insight
-With pull-up resistors, **pressed button = LOW (0)**, not HIGH (1)
+- digitalRead() – Reading input from a pin
+- INPUT_PULLUP – Internal pull-up resistor
+- Serial Monitor – Debugging output
+- if/else logic
 
 ## My Code
-```cpp
+`
 const int LED_PIN = 2;
 const int BUTTON_PIN = 4;
 
@@ -30,3 +27,7 @@ void loop() {
   }
   delay(100);
 }
+`
+
+## Simulation Link
+(https://wokwi.com/projects/463340774955854849)
