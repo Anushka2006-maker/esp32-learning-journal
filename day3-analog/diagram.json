@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Anushka Dubey",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -50,
+      "left": 300,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": 50,
+      "left": 300,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "led1:C", "black", ["v20", "h-80", "v-40", "h-200"]],
+    ["esp:GPIO2", "led1:A", "green", ["v20", "h-80", "v-40", "h-180"]],
+    ["esp:3V3", "pot1:VCC", "red", ["v140", "h-80", "v80", "h-180"]],
+    ["esp:GND.1", "pot1:GND", "black", ["v160", "h-80", "v80", "h-200"]],
+    ["esp:GPIO34", "pot1:SIG", "yellow", ["v160", "h-220", "v80", "h-40"]]
+  ]
+}
