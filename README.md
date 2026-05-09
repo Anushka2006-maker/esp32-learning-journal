@@ -12,12 +12,19 @@ My 35-day journey learning IoT and Embedded Systems as an ECE student.
 - Pull-up resistors (INPUT_PULLUP)
 - Serial communication (Serial.begin, Serial.print)
 - if/else logic
+- Analog Input (analogRead) 
+- PWM / analogWrite 
+- map() function 
+- Arrays and For Loops 
+- Multiple LED control  
 
 ## Repository Structure
 | Day | Project | Code |
 |-----|---------|------|
-| 1 | LED Blink | day1-blink/sketch.ino |
-| 2 | Button Control | day2-button/sketch.ino |
+| 1 | LED Blink | [View](day1-blink/sketch.ino) 
+| 2 | Button Control | [View](day2-button/sketch.ino)
+| 3 | Analog Input + PWM | [View](day3-analog/sketch.ino) 
+| 4 | Multiple LEDs + Patterns | [View](day4-multiled/sketch.ino) 
 
 ## Connect with Me
 - GitHub: Anushka2006-maker
