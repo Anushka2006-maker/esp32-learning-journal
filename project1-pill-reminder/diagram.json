@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "green_led",
+      "top": -80,
+      "left": 150,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "yellow_led",
+      "top": -80,
+      "left": 230,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "red_led",
+      "top": -80,
+      "left": 310,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "ack_button",
+      "top": 20,
+      "left": 230,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-piezo",
+      "id": "buzzer",
+      "top": 90,
+      "left": 230,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "green_led:C", "black"],
+    ["esp:GPIO13", "green_led:A", "green"],
+    ["esp:GND.1", "yellow_led:C", "black"],
+    ["esp:GPIO12", "yellow_led:A", "yellow"],
+    ["esp:GND.1", "red_led:C", "black"],
+    ["esp:GPIO14", "red_led:A", "red"],
+    ["esp:GND.1", "ack_button:2.l", "black"],
+    ["esp:GPIO27", "ack_button:1.l", "orange"],
+    ["esp:GND.1", "buzzer:2.l", "black"],
+    ["esp:GPIO26", "buzzer:1.l", "blue"]
+  ]
+}
