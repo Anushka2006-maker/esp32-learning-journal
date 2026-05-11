@@ -59,7 +59,7 @@ A smart medicine reminder system for elderly care or medication management. Buil
 - Snooze functionality (remind again in 10 minutes)
 
 ## Simulation Link
-[Paste your Wokwi share link here]
+https://wokwi.com/projects/463735141348125697
 
 
 ## Author
