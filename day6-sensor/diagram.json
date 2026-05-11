@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp"
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "attrs": { "pin": "15" }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "dht1:GND", "black"],
+    ["esp:3V3", "dht1:VCC", "red"],
+    ["esp:GPIO15", "dht1:DATA", "yellow"]
+  ]
+}
