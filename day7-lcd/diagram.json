@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": 4.6, "attrs": {} },
+    { "type": "wokwi-lcd1602-i2c", "id": "lcd1", "top": -50, "left": 150, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:GND.1", "lcd1:GND", "black", [] ],
+    [ "esp:3V3", "lcd1:VCC", "red", [] ],
+    [ "esp:GPIO21", "lcd1:SDA", "blue", [] ],
+    [ "esp:GPIO22", "lcd1:SCL", "yellow", [] ]
+  ],
+  "dependencies": {}
+}
