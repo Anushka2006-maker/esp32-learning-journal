@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp"
+    },
+    {
+      "type": "wokwi-lcd1602-i2c",
+      "id": "lcd1",
+      "top": -80,
+      "left": 100,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-tm1637",
+      "id": "display1",
+      "top": 0,
+      "left": 100,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": 80,
+      "left": 250,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "lcd1:GND", "black"],
+    ["esp:3V3", "lcd1:VCC", "red"],
+    ["esp:GPIO21", "lcd1:SDA", "blue"],
+    ["esp:GPIO22", "lcd1:SCL", "yellow"],
+    ["esp:GND.1", "display1:GND", "black"],
+    ["esp:3V3", "display1:VCC", "red"],
+    ["esp:GPIO21", "display1:CLK", "green"],
+    ["esp:GPIO22", "display1:DIO", "orange"],
+    ["esp:GND.1", "pot1:GND", "black"],
+    ["esp:3V3", "pot1:VCC", "red"],
+    ["esp:GPIO34", "pot1:SIG", "purple"]
+  ]
+}
