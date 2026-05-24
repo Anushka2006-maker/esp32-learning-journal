@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp"
+    },
+    {
+      "type": "wokwi-apds9960",
+      "id": "sensor1"
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "attrs": { "color": "purple" }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "sensor1:GND", "black"],
+    ["esp:3V3", "sensor1:VCC", "red"],
+    ["esp:GPIO21", "sensor1:SDA", "blue"],
+    ["esp:GPIO22", "sensor1:SCL", "yellow"],
+    ["esp:GND.1", "led1:C", "black"],
+    ["esp:GPIO13", "led1:A", "green"],
+    ["esp:GND.1", "led2:C", "black"],
+    ["esp:GPIO12", "led2:A", "green"],
+    ["esp:GND.1", "led3:C", "black"],
+    ["esp:GPIO14", "led3:A", "green"],
+    ["esp:GND.1", "led4:C", "black"],
+    ["esp:GPIO27", "led4:A", "green"],
+    ["esp:GND.1", "led5:C", "black"],
+    ["esp:GPIO26", "led5:A", "green"]
+  ]
+}
